@@ -17,6 +17,7 @@ export async function POST() {
       headers: {
         'Authorization': `Bearer ${apiKey}`,
         'Content-Type': 'application/json',
+        'OpenAI-Beta': 'chatkit_beta=v1',
       },
       body: JSON.stringify({
         workflow_id: workflowId,
@@ -45,3 +46,12 @@ export async function POST() {
     );
   }
 }
+```
+
+→ **Commit changes**
+
+---
+
+Ho aggiunto la riga:
+```
+'OpenAI-Beta': 'chatkit_beta=v1',
