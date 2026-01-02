@@ -46,12 +46,3 @@ export async function POST() {
     );
   }
 }
-```
-
-→ **Commit changes**
-
----
-
-Ho aggiunto la riga:
-```
-'OpenAI-Beta': 'chatkit_beta=v1',
