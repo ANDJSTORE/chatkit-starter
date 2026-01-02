@@ -20,7 +20,7 @@ export async function POST() {
         'OpenAI-Beta': 'chatkit_beta=v1',
       },
       body: JSON.stringify({
-        workflow_id: workflowId,
+        workflow: workflowId,
       }),
     });
 
