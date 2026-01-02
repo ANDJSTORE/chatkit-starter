@@ -21,6 +21,7 @@ export async function POST() {
       },
       body: JSON.stringify({
         workflow: workflowId,
+        user: 'anonymous-' + Date.now(),
       }),
     });
 
